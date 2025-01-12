@@ -1,0 +1,141 @@
+{
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "ベース",
+					"slug": "base"
+				},
+				{
+					"color": "#081226",
+					"name": "キー",
+					"slug": "key"
+				},
+				{
+					"color": "#005075",
+					"name": "アクセント1",
+					"slug": "accent-1"
+				},
+				{
+					"color": "#005075",
+					"name": "アクセント2",
+					"slug": "accent-2"
+				},
+				{
+					"color": "#005075",
+					"name": "アクセント3",
+					"slug": "accent-3"
+				}
+			]
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "極小",
+					"size": "0.75rem",
+					"slug": "space-xs"
+				},
+				{
+					"name": "デフォルト",
+					"size": "1rem",
+					"slug": "space-sm"
+				},
+				{
+					"name": "中",
+					"size": "1.5rem",
+					"slug": "space-md"
+				},
+				{
+					"name": "大",
+					"size": "2rem",
+					"slug": "space-lg"
+				},
+				{
+					"name": "特大",
+					"size": "2.5rem",
+					"slug": "space-xl"
+				}
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fontSizes": [
+				{
+					"name": "補足",
+					"size": "0.75rem",
+					"slug": "font-xs"
+				},
+				{
+					"name": "デフォルト",
+					"size": "1rem",
+					"slug": "font-sm"
+				},
+				{
+					"name": "見出し3",
+					"size": "1.5rem",
+					"slug": "font-md"
+				},
+				{
+					"name": "見出し2",
+					"size": "2rem",
+					"slug": "font-lg"
+				},
+				{
+					"name": "Extra Large",
+					"size": "2.5rem",
+					"slug": "font-xl"
+				},
+				{
+					"name": "Extra Extra Large",
+					"size": "3rem",
+					"slug": "font-xxl"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/image": {
+				"border": {
+					"radius": "16px"
+				}
+			},
+			"core/paragraph": {
+				"spacing": []
+			},
+            "core/group":{
+                "spacing": {"margin": {
+                    "top": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "right": "0"
+                }}
+            }
+		},
+		"color": {
+			"background": "#ffffff",
+			"text": "#333333"
+		},
+		"typography": {
+			"fontFamily": "Helvetica Neue,Arial,Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif",
+			"lineHeight": "2"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "ヘッダー"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "フッター"
+		}
+	],
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
+}

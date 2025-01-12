@@ -1,0 +1,239 @@
+/*
+Theme Name: noya
+Author: TKC
+Description:
+Version: 0.1
+*/
+
+body {
+    font-size: 16px;
+}
+
+.loading {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 50;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg,transparent,rgba(255, 255, 255, 0.2),transparent);
+        animation: skeleton-animation 1.2s linear infinite;
+    }
+}
+
+.opacity {
+    &:hover {
+        opacity: .72;
+    }
+}
+
+.shadow-xs {
+    transition:.3s ease;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.16));
+    &:hover {
+        filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.24));
+    }
+}
+
+.shadow-sm {
+    transition:.3s ease;
+    filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.16));
+    &:hover {
+        filter: drop-shadow(8px 8px 8px rgba(0,0,0,0.2));
+    }
+}
+
+.wp-block-query-pagination {
+    .wp-block-query-pagination-next, .wp-block-query-pagination-previous {
+            border-radius: 50%;
+            background: #32373c;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+            color: #fff;
+            * {
+                margin: 0;
+            }
+    }
+    .wp-block-query-pagination-numbers {
+        display: flex;
+        gap: 16px;
+        .page-numbers.current {
+            opacity: 0.8;
+        }
+        * {
+            color: #fff;
+            padding: .2rem .8rem;
+            border-radius: 4px;
+            background: #32373c;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    margin-block-start: 0;
+}
+
+.header {
+    .wp-block-site-logo {
+        a img .st0 {
+            stroke:#000;
+            stroke-dasharray: 2000;
+            stroke-dashoffset: 0;
+            stroke-width: 1;
+            -webkit-animation: hello .4s ease-in 0s;
+            animation: hello .4s ease-in 0s;
+        }
+    }
+    @-webkit-keyframes hello {
+        0% {
+            stroke-dashoffset: 2000;
+            fill:transparent;
+        }
+        40% {
+            stroke-dashoffset: 2000;
+            fill:transparent;
+        }
+        50% {
+            fill:transparent;
+        }
+        100% {
+            stroke-dashoffset: 0;
+            fill:#000;
+        }
+    }
+}
+
+.is-style-list-custom-style-1 {
+    display: inline-block;
+    list-style: none;
+    background: #fafafa;
+    margin: 1.5rem 0;
+    padding: 1rem 6rem 1rem 1.5rem;
+    border-radius: 8px;
+        li {
+            position: relative;
+        a {
+            transition: .24s;
+            &:hover {
+                opacity: .6;
+            }
+        }
+        &:before {
+            content: "・";
+            position: absolute;
+            top: 0;
+            left: -1.2rem;
+        }       
+    }
+}
+
+#ez-toc-container {
+    position: relative;
+    background: #fafafa;
+    border: 1px #ccc solid;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    margin: 0 0 1.5rem 0;
+    a {
+        transition: .24s;
+        color: #333;
+        &:hover {
+            color: #086ec9;
+        }
+    }
+    .ez-toc-title {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 1rem 0 0.4rem 0;
+        margin: 0;
+        text-align: center;
+    }
+    .ez-toc-cssicon-toggle-label {
+        position: absolute;
+        right: calc(50% - 112px);
+        top: 23px;
+        svg {
+            fill: #333 !important;
+            color: #333 !important;
+            width: 24px;
+            height: 24px;
+        }
+        .ez-toc-icon-toggle-span svg:nth-child(2) {
+            display: none;
+        }
+    
+    }
+    nav {
+        width: 100%;
+        ul {
+            list-style: none;
+        }
+        .ez-toc-list {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+.ez-toc-list {
+    padding: 1.5rem;
+}
+
+.wp-block-column.shadow-xxs {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.08));
+}
+
+.wp-block-column.shadow-xxs:hover {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.08));
+}
+
+
+
+/* キラキラエフェクトのアニメーション */
+@keyframes skeleton-animation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* 画像部分のスケルトンスクリーン */
+.loadingnoya_noya_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #e2e2e2;
+    border-radius: 50%;
+}
+
+/* テキスト部分のスケルトンスクリーン */
+.loadingnoya_noya_line {
+    display: block;
+    margin-top: 10px;
+    height: 20px;
+    background-color: #e2e2e2;
+}
+
+/* スケルトンスクリーンを非表示にするクラス */
+.loading--hidden {
+    display: none;
+}
