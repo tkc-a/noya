@@ -156,7 +156,8 @@ footer {
 }
 
 #post_author_box {
-  border: 1px solid #ccc;
+  background: #fbfbfb;
+  border: 1px solid #efefef;
   border-radius: 1rem;
   padding: 16px;
   margin-bottom: 24px;
@@ -180,7 +181,6 @@ footer {
 }
 #post_author_box .post_author_inner .author-details {
   margin: 0;
-  color: #737373;
 }
 
 /*
