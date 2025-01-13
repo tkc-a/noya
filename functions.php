@@ -1,7 +1,7 @@
 <?php
 
 require_once get_template_directory() . '/inc/admin-post.php';
-require_once get_template_directory() . '/inc/metadata.php';
+
 // テーマフォルダ内の「style.css」を読み込む場合
 add_action( 'wp_enqueue_scripts', function(){
     wp_enqueue_style( 'main-css', get_stylesheet_uri() );
