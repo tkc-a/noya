@@ -182,6 +182,29 @@ footer {
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.08));
 }
 
+#post_author_box {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    .author-avatar {
+        margin-right: 16px;
+        img {
+            border-radius: 50%;
+        }
+        .author-name {
+            text-align: center;
+            margin: 0 0 0 0;
+        }
+    }
+    .author-details {
+        p {
+            margin: 0;
+        }
+    }
+}
+
 /*
 ** ブロックテーマがレスポンシブに対応次第以下は移行
 **  トップページ

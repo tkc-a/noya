@@ -4,6 +4,7 @@
  * 投稿にメタボックスを追加
  * 投稿編集画面の下部、サイドにメタボックスを追加
  */
+/*
 function add_post_metabox() {
     add_meta_box(
         'author_info_check', // メタボックスのID
@@ -23,11 +24,12 @@ function add_post_metabox() {
     );
 }
 add_action('add_meta_boxes', 'add_post_metabox');
-
+*/
 /**
  * 投稿に著者情報の表示非表示を追加
  * 投稿編集画面のサイドに著者情報の表示非表示を追加
  */
+/*
 function render_author_info_metabox($post) {
     // 現在の値を取得。デフォルトは "yes"
     $value = get_post_meta($post->ID, '_show_author_info', true) ?: true;
@@ -38,8 +40,8 @@ function render_author_info_metabox($post) {
             著者情報を表示する
         </label>
     HTML;
-}
-
+}*/
+/*
 function save_post_metabox($post_id) {
     // 投稿保存時にメタ情報を保存
     if (isset($_POST['show_author_info'])) {
@@ -169,4 +171,5 @@ function save_seo_metabox_data($post_id) {
         delete_post_meta($post_id, '_separator_style');
     }
 }
-add_action('save_post', 'save_seo_metabox_data');
+add_action('save_post', 'save_seo_metabox_data');\
+*/

@@ -155,6 +155,27 @@ footer {
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.08));
 }
 
+#post_author_box {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 16px;
+  margin-bottom: 24px;
+  display: flex;
+}
+#post_author_box .author-avatar {
+  margin-right: 16px;
+}
+#post_author_box .author-avatar img {
+  border-radius: 50%;
+}
+#post_author_box .author-avatar .author-name {
+  text-align: center;
+  margin: 0 0 0 0;
+}
+#post_author_box .author-details p {
+  margin: 0;
+}
+
 /*
 ** ブロックテーマがレスポンシブに対応次第以下は移行
 **  トップページ
