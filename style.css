@@ -160,20 +160,27 @@ footer {
   border-radius: 1rem;
   padding: 16px;
   margin-bottom: 24px;
+}
+#post_author_box .author-title {
+  width: 100%;
+  margin: 0 0 8px 0;
+}
+#post_author_box .post_author_inner {
   display: flex;
 }
-#post_author_box .author-avatar {
+#post_author_box .post_author_inner .author-avatar {
   margin-right: 16px;
 }
-#post_author_box .author-avatar img {
+#post_author_box .post_author_inner .author-avatar img {
   border-radius: 50%;
 }
-#post_author_box .author-avatar .author-name {
+#post_author_box .post_author_inner .author-avatar .author-name {
   text-align: center;
   margin: 0 0 0 0;
 }
-#post_author_box .author-details p {
+#post_author_box .post_author_inner .author-details {
   margin: 0;
+  color: #737373;
 }
 
 /*
@@ -181,6 +188,9 @@ footer {
 **  トップページ
 */
 @media (600px > width) {
+  #container {
+    padding: 12px 16px !important;
+  }
   .header-inner {
     padding: 12px 16px !important;
   }
@@ -225,6 +235,9 @@ footer {
   }
 }
 @media (600px <= width < 782px) {
+  #container {
+    padding: 16px 24px !important;
+  }
   .header-inner {
     padding: 16px 24px !important;
   }

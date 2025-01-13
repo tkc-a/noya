@@ -36,12 +36,15 @@ function get_post_author() {
     $author_avatar = get_avatar(get_the_author_meta($author->ID), 80);
     $result = "
         <div id='post_author_box'>
-            <div class='author-avatar'>
-                $author_avatar
-                <p class='author-name'>$author_name</p>
-            </div>
-            <div class='author-details'>
-                <p>$author_bio</p>
+            <p class='author-title'>この記事を書いた人</p>
+            <div class='post_author_inner'>
+                <div class='author-avatar'>
+                    $author_avatar
+                    <p class='author-name'>$author_name</p>
+                </div>
+                <p class='author-details'>
+                    $author_bio
+                </p>
             </div>
         </div>
     ";
