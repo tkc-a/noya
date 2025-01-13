@@ -1,7 +1,6 @@
 <?php
 //ファイルの読み込み
 require_once get_template_directory() . '/inc/post-add-profile.php';
-require_once get_template_directory() . '/inc/profile-add-menu.php';
 
 // テーマフォルダ内の「style.css」を読み込む場合
 add_action( 'wp_enqueue_scripts', function(){
