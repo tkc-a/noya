@@ -8,7 +8,7 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"header"} /-->
 
 <!-- wp:columns {"style":{"color":{"background":"#f5f6f7"},"spacing":{"padding":{"top":"var:preset|spacing|space-xl","bottom":"var:preset|spacing|space-xl"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns has-background"
+<div id="container" class="wp-block-columns has-background"
     style="background-color:#f5f6f7;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--space-xl);padding-bottom:var(--wp--preset--spacing--space-xl)">
     <!-- wp:column {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|space-lg","left":"0","right":"0"}},"border":{"radius":"8px"}}} -->
     <div class="wp-block-column"
@@ -88,19 +88,19 @@
                         <!-- wp:search {"label":"検索\u003cbr\u003e","showLabel":false,"placeholder":"キーワードを入力..","buttonText":"検索","style":{"border":{"radius":"4px","width":"1px"}}} /-->
 
                         <!-- wp:heading -->
-                        <h2 class="wp-block-heading"><?php esc_html_e('新着記事', 'noya');?></h2>
+                        <h2 class="wp-block-heading">新着記事</h2>
                         <!-- /wp:heading -->
 
                         <!-- wp:latest-posts /-->
 
                         <!-- wp:heading -->
-                        <h2 class="wp-block-heading"><?php esc_html_e('カテゴリ一覧', 'noya');?></h2>
+                        <h2 class="wp-block-heading">カテゴリ一覧</h2>
                         <!-- /wp:heading -->
 
                         <!-- wp:categories /-->
 
                         <!-- wp:heading -->
-                        <h2 class="wp-block-heading"><?php esc_html_e('タグ一覧', 'noya');?></h2>
+                        <h2 class="wp-block-heading">タグ一覧</h2>
                         <!-- /wp:heading -->
 
                         <!-- wp:post-terms {"term":"post_tag"} /-->
@@ -130,7 +130,7 @@
             <!-- /wp:image -->
 
             <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}},"fontSize":"font-md"} -->
-            <p class="has-font-md-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php esc_html_e('tkc.', 'noya');?></p>
+            <p class="has-font-md-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">tkc.</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"style":{"color":{"text":"#737373"},"elements":{"link":{"color":{"text":"#737373"}}},"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"},"padding":{"top":"0","bottom":"0"}}}} -->
@@ -187,7 +187,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"#737373"}}},"color":{"text":"#737373"}},"fontSize":"font-xs"} -->
-                <p class="has-text-color has-link-color has-font-xs-font-size" style="color:#737373"><?php esc_html_e('カテゴリー', 'noya');?></p>
+                <p class="has-text-color has-link-color has-font-xs-font-size" style="color:#737373">カテゴリー</p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->

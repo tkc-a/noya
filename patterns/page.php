@@ -8,7 +8,7 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"header"} /-->
 
 <!-- wp:columns {"className":"shadow-xxs","style":{"color":{"background":"#f5f6f7"},"spacing":{"padding":{"top":"var:preset|spacing|space-xl","bottom":"var:preset|spacing|space-xl","left":"var:preset|spacing|space-xl","right":"var:preset|spacing|space-xl"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns shadow-xxs has-background"
+<div id="container" class="wp-block-columns shadow-xxs has-background"
     style="background-color:#f5f6f7;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--space-xl);padding-right:var(--wp--preset--spacing--space-xl);padding-bottom:var(--wp--preset--spacing--space-xl);padding-left:var(--wp--preset--spacing--space-xl)">
     <!-- wp:column {"style":{"border":{"radius":"8px"},"spacing":{"padding":{"top":"var:preset|spacing|space-xl","bottom":"var:preset|spacing|space-xl","left":"var:preset|spacing|space-xl","right":"var:preset|spacing|space-xl"}}},"backgroundColor":"base"} -->
     <div class="wp-block-column has-base-background-color has-background"
@@ -54,8 +54,8 @@
                     <!-- wp:column {"verticalAlignment":"top","width":"40px","layout":{"type":"default"}} -->
                     <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:40px">
                         <!-- wp:image {"width":"40px","sizeSlug":"thumbnail","linkDestination":"none","className":"is-style-image-border-circle"} -->
-                        <figure class="wp-block-image size-thumbnail is-resized is-style-image-border-circle"><img
-                                style="width:40px" /></figure>
+                        <figure class="wp-block-image size-thumbnail is-resized is-style-image-border-circle">
+                            <img　style="width:40px" /></figure>
                         <!-- /wp:image -->
                     </div>
                     <!-- /wp:column -->
@@ -98,7 +98,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"#737373"}}},"color":{"text":"#737373"}},"fontSize":"font-xs"} -->
-                <p class="has-text-color has-link-color has-font-xs-font-size" style="color:#737373"><?php esc_html_e('カテゴリー', 'noya');?></p>
+                <p class="has-text-color has-link-color has-font-xs-font-size" style="color:#737373">カテゴリー</p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
