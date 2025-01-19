@@ -32,20 +32,18 @@
 		},
 		"spacing": {
 			"defaultSpacingSizes": false,
+            "spacingScale": {
+                "steps": 6
+            },
 			"spacingSizes": [
 				{
-					"name": "極小",
-					"size": "0.75rem",
-					"slug": "space-xs"
-				},
-				{
-					"name": "デフォルト",
+					"name": "小",
 					"size": "1rem",
 					"slug": "space-sm"
 				},
 				{
 					"name": "中",
-					"size": "1.5rem",
+					"size": "clamp(1rem, 0.75rem + 1vw, 1.5rem)",
 					"slug": "space-md"
 				},
 				{
@@ -55,9 +53,19 @@
 				},
 				{
 					"name": "特大",
-					"size": "2.5rem",
+					"size": "clamp(1.5rem, 1rem + 2vw, 2.5rem)",
 					"slug": "space-xl"
-				}
+				},
+                {
+                    "name": "特特大",
+                    "size": "clamp(1rem, 4vw, 3rem)",
+                    "slug": "space-xxl"
+                },
+                {
+                    "name": "特特特大",
+                    "size": "clamp(1.5rem,0.25rem + 5vw,4rem)",
+                    "slug": "space-xxxl"
+                }
 			]
 		},
 		"typography": {
@@ -85,7 +93,7 @@
 				},
 				{
 					"name": "Extra Large",
-					"size": "2.5rem",
+					"size": "clamp(1.5rem, 1rem + 2vw, 2.5rem)",
 					"slug": "font-xl"
 				},
 				{
