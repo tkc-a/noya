@@ -1,6 +1,6 @@
 /*
 Theme Name: noya
-Author: TKC
+Author: tkc.
 Description:
 Version: 0.0.1
 */
@@ -217,108 +217,15 @@ footer {
 **  トップページ
 */
 
-@media (600px > width) {
-    #container {
-        padding: 12px 16px !important;
+@media (780px > width) {
+    #index-recommend-col-3 .content-main .content-main-column {
+        margin-bottom: clamp(1.5rem, 0.474rem + 2.11vw, 2.5rem) !important;
     }
-    .header-inner {
-        padding: 12px 16px !important;
+    #index-loop-new .content-main-column .content-main-column-box {
+        padding-left: 0 !important;
+        padding-top: 1rem !important;
     }
-    .content-head {
-        p {
-            padding: 24px 16px  0 16px !important;
-        }
-        h2 {
-            padding:  0 0 0 0 !important;
-            font-size: 20px !important;
-            margin-top: 8px !important;
-        }
-    }
-    .content-main {
-        padding: 12px 16px !important;
-        .content-main-column {
-            margin-bottom: 24px !important;
-        }
-        .content-main-column-title {
-            padding: 16px 16px 8px 16px !important;
-            font-size: 20px !important;
-        }
-        .content-main-column-text {
-            margin: 0 !important;
-        }
-        .content-main-column-btn {
-            margin: 0 0 0 0 !important;
-        }
-    }
-    //後で修正
-    #index-loop-new {
-        padding: 16px 24px !important;
-        .content-main-columns ul li{
-            margin-bottom: 24px !important;
-        }
-        .content-main-column {
-            padding: 24px 16px !important;
-        }
-        .content-main-column-image {
-            margin: 0 0 16px 0 !important;
-        }
-        .content-main-column-box {
-            padding: 0 0 0 0 !important;
-        }
-    }
-}
 
-@media (600px <= width < 782px) {
-    #container {
-        padding: 16px 24px !important;
-    }
-    .header-inner {
-        padding: 16px 24px !important;
-    }
-    .content-head {
-        p {
-            padding: 32px 24px  0 24px !important;
-        }
-        h2 {
-            padding:  0 0 0 0 !important;
-            font-size: 24px !important;
-            margin-top: 8px !important;
-        }
-    }
-    .content-main {
-        padding: 16px 24px !important;
-        .content-main-column {
-            margin-bottom: 24px !important;
-        }
-        .content-main-column-title {
-            padding: 16px 16px 8px 16px !important;
-            font-size: 24px !important;
-        }
-        .content-main-column-text {
-            margin: 0 !important;
-        }
-        .content-main-column-btn {
-            margin: 0 0 0 0 !important;
-        }
-    }
-    #index-loop-new {
-        padding: 16px 24px !important;
-        .content-main-columns ul li{
-            margin-bottom: 24px !important;
-        }
-        .content-main-column {
-            padding: 24px 16px !important;
-        }
-        .content-main-column-image {
-            margin: 0 0 16px 0 !important;
-        }
-        .content-main-column-box {
-            padding: 0 0 0 0 !important;
-        }
-    }
-}
-
-@media (782px > width) {
     #sidebar-profile .sidebar-profile-bottom-inner {
         flex-wrap: initial !important;
     }
